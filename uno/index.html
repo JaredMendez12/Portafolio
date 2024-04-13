@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saludo</title>
+    
+    <script>
+        document.write('Bienvenido');
+        function saludar(){
+            //Declarar variables: var, let y const
+            var nombre;
+            var resultado;  
+            nombre = document.getElementById('txt_nombre').value;
+            resultado = 'Hola '+nombre+' feliz dia';
+            document.getElementById('resultado').innerHTML = resultado;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="txt_nombre"> 
+    <button id="btnSaludar" onclick="saludar()">Saludar</button>
+    <label id="resultado"></label>    
+</body>
+</html>

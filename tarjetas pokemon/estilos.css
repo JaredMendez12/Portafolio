@@ -1,0 +1,15 @@
+.cambio-fondo {
+    animation: cambio-color 6s infinite alternate;
+  }
+  
+  @keyframes cambio-color {
+    0% {
+      background-color: red;
+    }
+    50% {
+      background-color: white;
+    }
+    100% {
+      background-color: black;
+    }
+}
